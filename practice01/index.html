@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 01</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        var myArray = ['bug', 'insect', 'mammal', 'reptile', 'mammoth', 'turtles'];
+        var newArray = [];
+
+        var userInput = prompt("Please enter any word");
+
+        console.log("You entered ", userInput);
+
+        var biggerWords = function (userInput, myArray) {
+            for (var i=0; i<myArray.length+1; i++) {
+                if (userInput.length < myArray[i].length) {
+                    newArray[i] = myArray[i];
+                }
+            }
+        };
+
+        console.log("Words that are longer than what you have entered is/are " + newArray);
+
+    </script>
+
+</body>
+</html>
