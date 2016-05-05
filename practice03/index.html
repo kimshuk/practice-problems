@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice Problem 03</title>
+    <script>
+        var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];
+        var output = {
+            'string': [],
+            'number': [],
+            'boolean': []
+        };
+
+        function groupArray(array) {
+            for (var i=0; i < array.length; i++) {
+                if (typeof array[i] == "string") {
+                    output.string.push(array[i]);
+                } else if ( typeof array[i] == "number") {
+                    output.number.push(array[i]);
+                } else if (typeof array[i] == "boolean") {
+                    output.boolean.push(array[i]);
+                }
+            }
+        }
+
+        groupArray(myArray);
+        console.log("output is " + output.string + " " +output.number + " " +output.boolean);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
