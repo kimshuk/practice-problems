@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice Problem 2</title>
+    <script>
+        var myArray = ['hello', 45, 'Bob', 'what', '23'];
+        var output = [];
+
+
+        function arrayReverse(array) {
+            for(var i=(array.length-1); i>=0; i--) {
+                output.push(array[i]);
+            }
+        }
+
+        arrayReverse(myArray);
+        console.log("output is: " + output);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
