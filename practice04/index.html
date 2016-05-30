@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js practice 04</title>
+    <script>
+        var myArray = ['mouse', 'cat', 'dog', 'human'];
+
+        function sort(array) {
+            do {
+                var swapped = false;
+                for (var i = 0; i < array.length - 1; i++) {
+                    if (array[i] > array[i+1]) {
+                        var temp = array[i];
+                        array[i] = array[i+1];
+                        array[i+1] = temp;
+                        swapped = true;
+                    }
+                }
+            } while (swapped == true);
+        }
+        var a = sort(['mouse', 'cat', 'dog', 'human']);
+        console.log(a);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -10,18 +10,24 @@
             'number': [],
             'boolean': []
         };
-
         function groupArray(array) {
-            for (var i=0; i < array.length; i++) {
-                if (typeof array[i] == "string") {
-                    output.string.push(array[i]);
-                } else if ( typeof array[i] == "number") {
-                    output.number.push(array[i]);
-                } else if (typeof array[i] == "boolean") {
-                    output.boolean.push(array[i]);
-                }
+            for (var x in array) {
+
             }
         }
+
+
+//        function groupArray(array) {
+//            for (var i=0; i < array.length; i++) {
+//                if (typeof array[i] == "string") {
+//                    output.string.push(array[i]);
+//                } else if ( typeof array[i] == "number") {
+//                    output.number.push(array[i]);
+//                } else if (typeof array[i] == "boolean") {
+//                    output.boolean.push(array[i]);
+//                }
+//            }
+//        }
 
         groupArray(myArray);
         console.log("output is " + output.string + " " +output.number + " " +output.boolean);
