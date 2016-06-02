@@ -11,18 +11,20 @@
             var swapped;
             do {
                 swapped = false;
-                for (var i=0; i < myArray.length-1; i++) {
+                for (var i=0; i < myArray.length; i++) {
                     if (myArray[i] > myArray[i+1]) {
                         var temp = myArray[i];
                         myArray[i] = myArray[i+1];
                         myArray[i+1] = temp;
+                        console.log(myArray[i]);
                         swapped = true;
                     }
                 }
+                return myArray;
             } while (swapped);
         }
         var a = bubbleSort(myArray);
-        console.log(a);
+        console.log(bubbleSort(myArray));
     </script>
 </head>
 <body>
