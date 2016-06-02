@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice 20</title>
+    <script>
+        var input_array = [5,3,2,5,1];
+        var length = input_array.length;
+        function randomize_list(input_array) {
+            for(var i = 0; i < length; i++) {
+                var output_array = [];
+                output_array[i] = input_array.pop();
+            }
+            console.log("output array: " + output_array);
+        }
+        randomize_list(input_array);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

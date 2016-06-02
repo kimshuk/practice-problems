@@ -6,20 +6,22 @@
     <script>
         var myArray = ['mouse', 'cat', 'dog', 'human'];
 
-        function sort(array) {
+        function bubbleSort(myArray)
+        {
+            var swapped;
             do {
-                var swapped = false;
-                for (var i = 0; i < array.length - 1; i++) {
-                    if (array[i] > array[i+1]) {
-                        var temp = array[i];
-                        array[i] = array[i+1];
-                        array[i+1] = temp;
+                swapped = false;
+                for (var i=0; i < myArray.length-1; i++) {
+                    if (myArray[i] > myArray[i+1]) {
+                        var temp = myArray[i];
+                        myArray[i] = myArray[i+1];
+                        myArray[i+1] = temp;
                         swapped = true;
                     }
                 }
-            } while (swapped == true);
+            } while (swapped);
         }
-        var a = sort(['mouse', 'cat', 'dog', 'human']);
+        var a = bubbleSort(myArray);
         console.log(a);
     </script>
 </head>
