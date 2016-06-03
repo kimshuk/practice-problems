@@ -5,15 +5,16 @@
     <title>practice 20</title>
     <script>
         var input_array = [5,3,2,5,1];
-        var length = input_array.length;
-        function randomize_list(input_array) {
-            for(var i = 0; i < length; i++) {
-                var output_array = [];
+        var output_array = [];
+
+        function randomize_list(array) {
+            for(var i = 0; i < array.length; i++) {
                 output_array[i] = input_array.pop();
             }
-            console.log("output array: " + output_array);
+            return output_array;
         }
-        randomize_list(input_array);
+        var a = randomize_list(input_array);
+        console.log(a);
     </script>
 </head>
 <body>
