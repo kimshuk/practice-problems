@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <title>practice 06</title>
     <script>
+        var fibArray = [];
+
         function fibSequence(length) {
-            var array = [];
-            var fib = 0;
-            var fib2 = 1;
-            array.push(fib + fib2);
-            console.log(array);
+            fibArray[0] = 0;
+            fibArray[1] = 1;
+
+            for (var i=2; i<length; i++){
+                fibArray[i] = fibArray[i-2] + fibArray[i-1];
+            }
+            return fibArray;
         }
-        fibSequence(12);
+        console.log(fibSequence(12));
     </script>
 </head>
 <body>
